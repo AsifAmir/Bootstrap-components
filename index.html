@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Bootstrap Components">
+    <meta name="description" content="Personal portfolio">
+    <meta name="keywords" content="html, html tutorial, bootstrap, bootstrap Components, bootstrap tutorial">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="5 days days">
+    <meta name="author" content="Asif Amir">
+
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstrap Components</title>
+  </head>
+  <body>
+    <section>
+      <!-- Dismissing alert -->
+      <div class="container mb-3">
+        <div class="alert alert-warning alert-dismissible fade show shadow" role="alert">
+          <h4 class="alert-heading">Alert!</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam facere non quisquam quod aspernatur sed officiis officia quae natus voluptate suscipit, itaque ratione cumque commodi distinctio provident. Saepe, officia.!</p>
+          <hr>
+          <p class="mb-0">Lorem ipsum dolor sit amet. <a href="#" class="alert-link">Click here</a></p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <!-- Custome dismissing alert -->
+      <div class="container mb-3">
+        <div class="alert c_alert alert-dismissible fade show" role="alert">
+          <p class="mb-0">Lorem ipsum dolor sit, amet consectetur, <a href="#" class="alert-link">adipisicing elit.</a> Aspernatur provident, modi. Incidunt!</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      <!--  -->
+      <!-- Flush accordion -->
+      <!--  -->
+      <div class="container mb-3">
+
+        <div class="accordion accordion-flush" id="acc_flush">
+          <!-- item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h_1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_1" aria-expanded="false" aria-controls="c_1">
+                <strong>#1</strong> Lorem ipsum dolor sit amet?
+              </button>
+            </h2>
+            <div id="c_1" class="accordion-collapse collapse" aria-labelledby="h_1" data-bs-parent="#acc_flush">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quibusdam nam tempora earum sequi quo sunt, molestiae deserunt dolore repellat assumenda magnam et numquam hic consequatur autem ipsam aperiam</p>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h_2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_2" aria-expanded="false" aria-controls="c_2">
+                <strong>#2</strong> Lorem ipsum dolor sit amet?
+              </button>
+            </h2>
+            <div id="c_2" class="accordion-collapse collapse" aria-labelledby="h_2" data-bs-parent="#acc_flush">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quibusdam nam tempora earum sequi quo sunt, molestiae deserunt dolore repellat assumenda magnam et numquam hic consequatur autem ipsam aperiam</p>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h_3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_3" aria-expanded="false" aria-controls="c_3">
+                <strong>#3</strong> Lorem ipsum dolor sit amet?
+              </button>
+            </h2>
+            <div id="c_3" class="accordion-collapse collapse" aria-labelledby="h_3" data-bs-parent="#acc_flush">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quibusdam nam tempora earum sequi quo sunt, molestiae deserunt dolore repellat assumenda magnam et numquam hic consequatur autem ipsam aperiam</p>
+              </div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h_4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_4" aria-expanded="false" aria-controls="c_4">
+                <strong>#4</strong> Lorem ipsum dolor sit amet?
+              </button>
+            </h2>
+            <div id="c_4" class="accordion-collapse collapse" aria-labelledby="h_4" data-bs-parent="#acc_flush">
+              <div class="accordion-body">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quibusdam nam tempora earum sequi quo sunt, molestiae deserunt dolore repellat assumenda magnam et numquam hic consequatur autem ipsam aperiam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- badge -->
+      <div class="container mb-3">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-secondary">
+              Notifications <span class="badge text-bg-danger">4</span>
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-warning position-relative">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div class="container mb-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <button type="submit" class="btn btn-outline-success w-100">Submit</button>
+          </div>
+          <div class="col-lg-6">
+            <button type="reset" class="btn btn-outline-danger w-100">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a class="btn btn-primary w-100 mb-1" href="sports.html" role="button">Sports</a>
+            <a class="btn btn-success w-100" href="football.html" role="button">Football</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="container mb-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+      </div>
+
+    </section>
+    
+    <!-- JS links -->
+    <script src="js/pop.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
